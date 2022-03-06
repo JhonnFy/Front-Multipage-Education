@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear; }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+  html::-webkit-scrollbar {
+    width: 1rem; }
+  html::-webkit-scrollbar-track {
+    background: transparent; }
+  html::-webkit-scrollbar-thumb {
+    background: #0eb582; }
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+  z-index: 1000; }
+  .header .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #444;
+    font-weight: bolder; }
+    .header .logo i {
+      color: #0eb582; }
+  .header .navbar {
+    position: relative; }
+    .header .navbar #close-navbar {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      font-size: 4rem;
+      cursor: pointer;
+      color: #444;
+      display: none; }
+      .header .navbar #close-navbar:hover {
+        transform: rotate(90deg); }
+    .header .navbar a {
+      margin-right: 2rem;
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: #444; }
+      .header .navbar a:hover {
+        color: #0eb582; }
+  .header .icons div {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 1.5rem; }
+    .header .icons div:hover {
+      color: #0eb582; }
+  .header #menu-btn {
+    display: none; }
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem 5%; } }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%; }
+  .header {
+    padding: 2rem; } }
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block; }
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 30rem;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+    .header .navbar #close-navbar {
+      display: block; }
+    .header .navbar.active {
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      right: 0; }
+    .header .navbar a {
+      display: block;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 3rem; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%; } }
