@@ -156,6 +156,28 @@ section {
       background: #0eb582;
       color: #fff; }
 
+.home {
+  padding: 0; }
+  .home .slide {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+    background-size: cover !important;
+    background-position: center !important; }
+    .home .slide .content {
+      width: 50rem; }
+      .home .slide .content h3 {
+        font-size: 5rem;
+        text-transform: capitalize;
+        color: #444;
+        color: #fff; }
+      .home .slide .content p {
+        font-size: 1.6rem;
+        line-height: 2;
+        color: #777;
+        color: #eee;
+        padding: 1rem 0; }
+
 .footer {
   background: #f0fdfa; }
   .footer .box-container {
@@ -248,7 +270,9 @@ section {
       display: block;
       margin: 1rem 0;
       text-align: center;
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  .home .slide .content h3 {
+    font-size: 3rem; } }
 
 @media (max-width: 450px) {
   html {

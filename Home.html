@@ -9,7 +9,9 @@
   <!--Font Awesome Link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!--Custom Css File Link-->
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!--Swiper Css Link-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -20,9 +22,9 @@
     <nav class="navbar">
       <div id="close-navbar" class="fas fa-times"></div>
       <a href="Home.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Courses.html">Courses</a>
-      <a href="Contact.html">Contact</a>
+      <a href="/html/About.html">About</a>
+      <a href="/html/Courses.html">Courses</a>
+      <a href="/html/Contact.html">Contact</a>
     </nav>
 
     <div class="icons">
@@ -65,6 +67,51 @@
   </div>
   <!--Account Form Section Ends-->
 
+  <!--Home Section Starts-->
+  <section class="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+
+        <section class="swiper-slide slide" style="background: url(./img/home-slide-1.jpg) no-repeat">
+          <div class="content">
+            <h3>|The Best Courses You Will Find Here|</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              non neque officia provident alias molestias sed ad. 
+            </p>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+        </section>
+
+        <section class="swiper-slide slide" style="background: url(./img/home-slide-2.jpg) no-repeat">
+          <div class="content">
+            <h3>|The Best Courses You Will Find Here|</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              non neque officia provident alias molestias sed ad. 
+            </p>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+        </section>
+
+        <section class="swiper-slide slide" style="background: url(./img/home-slide-3.jpg) no-repeat">
+          <div class="content">
+            <h3>|The Best Courses You Will Find Here|</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              non neque officia provident alias molestias sed ad. 
+            </p>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+        </section>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </section>
+  <!--Home Section Ends-->
+
   <!--Footer Section Starts-->
   <section class="footer">
     <div class="box-container">
@@ -82,9 +129,9 @@
       <div class="box">
         <h3>Quick Links</h3>
         <a href="Home.html" class="link">Home</a>
-        <a href="About.html" class="link">About</a>
-        <a href="Courses.html" class="link">Courses</a>
-        <a href="Contact.html" class="link">Contact</a>
+        <a href="/html/About.html" class="link">About</a>
+        <a href="/html/Courses.html" class="link">Courses</a>
+        <a href="/html/Contact.html" class="link">Contact</a>
       </div>
 
       <div class="box">
@@ -105,14 +152,16 @@
         </form>
       </div>
     </div>
-    <div class="credit">
-      Created By <span>Dijhons Developer</span> | All Right Reserved |
-    </div>
+    <div class="credit">Created By <span>Dijhons Developer</span> | All Right Reserved |</div>
   </section>
   <!--Footer Section Ends-->
 
+
+  <!--Swiper Js Link-->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   <!--Custom js  File  Link-->
-  <script src="../js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
