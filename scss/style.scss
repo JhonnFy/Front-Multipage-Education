@@ -55,7 +55,7 @@ html {
   }
 }
 
-section{
+section {
   padding: 5rem 10%;
 }
 
@@ -156,7 +156,7 @@ section{
   padding: 2rem;
   text-align: center;
 
-  &.active{
+  &.active {
     right: 0;
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   }
@@ -179,10 +179,9 @@ section{
     padding: 2rem;
     display: none;
 
-    &.active{
+    &.active {
       display: block;
     }
-
 
     h3 {
       @include titleText(3rem);
@@ -228,70 +227,69 @@ section{
       }
     }
 
-    .btn{
-        width: 100%;
+    .btn {
+      width: 100%;
     }
   }
 
-  .buttons .btn{
-    margin: 0 .55rem;
+  .buttons .btn {
+    margin: 0 0.55rem;
 
-    &.active{
+    &.active {
       background: $green;
-      color:$white;
+      color: $white;
     }
-  } 
+  }
 }
 
-
-.footer{
+.footer {
   background: $light-green;
 
-  .box-container{
+  .box-container {
     @include grid(25rem);
 
-    .box{
-      h3{
+    .box {
+      h3 {
         @include titleText(2.2rem);
-        padding:1rem 0;
+        padding: 1rem 0;
 
-        i{
+        i {
           color: $green;
         }
       }
 
-      .share{
+      .share {
         margin-top: 1rem;
 
-        a{
+        a {
           height: 4.5rem;
           width: 4.5rem;
           line-height: 4.5rem;
           font-size: 1.7rem;
           background-color: $green;
-          color:$white;
-          margin-right: .3rem;
+          color: $white;
+          margin-right: 0.3rem;
           text-align: center;
         }
       }
-
-      .link{
+ 
+      .link {
         @include graphText(1.7rem);
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         display: block;
 
-        &:hover{
-          color:&green;
+        &:hover {
+          color: &green;
           text-decoration: underline;
         }
       }
 
-      p{
+      p {
         @include graphText(1.5rem);
         padding: 1rem 0;
       }
 
-      .email{
+      .email {
         width: 100%;
         padding: 1.2rem 1.4rem;
         font-size: 1.6rem;
@@ -300,30 +298,18 @@ section{
       }
     }
   }
-  .credit{
+  .credit {
     text-align: center;
     margin-top: 3rem;
     padding-top: 3rem;
     @include titleText(2rem);
     border-top: $border;
 
-    span{
-      color:$green;
+    span {
+      color: $green;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Media Queries
 @media (max-width: 1200px) {
@@ -331,10 +317,9 @@ section{
     padding: 2rem 5%;
   }
 
-  section{
+  section {
     padding: 3rem 5%;
   }
-
 }
 
 @media (max-width: 991px) {
@@ -346,10 +331,9 @@ section{
     padding: 2rem;
   }
 
-  section{
+  section {
     padding: 3rem 2rem;
   }
-
 }
 
 @media (max-width: 768px) {

@@ -151,7 +151,7 @@ section {
     .account-form form .btn {
       width: 100%; }
   .account-form .buttons .btn {
-    margin: 0 .55rem; }
+    margin: 0 0.55rem; }
     .account-form .buttons .btn.active {
       background: #0eb582;
       color: #fff; }
@@ -178,13 +178,13 @@ section {
         font-size: 1.7rem;
         background-color: #0eb582;
         color: #fff;
-        margin-right: .3rem;
+        margin-right: 0.3rem;
         text-align: center; }
     .footer .box-container .box .link {
       font-size: 1.7rem;
       line-height: 2;
       color: #777;
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       display: block; }
       .footer .box-container .box .link:hover {
         color: .footer .box-container .box .link:hover green;
