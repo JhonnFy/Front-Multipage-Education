@@ -55,6 +55,10 @@ html {
   }
 }
 
+section {
+  padding: 5rem 10%;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -152,7 +156,7 @@ html {
   padding: 2rem;
   text-align: center;
 
-  &.active{
+  &.active {
     right: 0;
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   }
@@ -175,10 +179,9 @@ html {
     padding: 2rem;
     display: none;
 
-    &.active{
+    &.active {
       display: block;
     }
-
 
     h3 {
       @include titleText(3rem);
@@ -224,41 +227,98 @@ html {
       }
     }
 
-    .btn{
-        width: 100%;
+    .btn {
+      width: 100%;
     }
   }
 
-  .buttons .btn{
-    margin: 0 .55rem;
+  .buttons .btn {
+    margin: 0 0.55rem;
 
-    &.active{
+    &.active {
       background: $green;
-      color:$white;
+      color: $white;
     }
-  } 
+  }
 }
 
+.footer {
+  background: $light-green;
 
+  .box-container {
+    @include grid(25rem);
 
+    .box {
+      h3 {
+        @include titleText(2.2rem);
+        padding: 1rem 0;
 
+        i {
+          color: $green;
+        }
+      }
 
+      .share {
+        margin-top: 1rem;
 
+        a {
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background-color: $green;
+          color: $white;
+          margin-right: 0.3rem;
+          text-align: center;
+        }
+      }
+ 
+      .link {
+        @include graphText(1.7rem);
+        padding: 0.5rem 0;
+        display: block;
 
+        &:hover {
+          color: &green;
+          text-decoration: underline;
+        }
+      }
 
+      p {
+        @include graphText(1.5rem);
+        padding: 1rem 0;
+      }
 
+      .email {
+        width: 100%;
+        padding: 1.2rem 1.4rem;
+        font-size: 1.6rem;
+        border: $border;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .credit {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    @include titleText(2rem);
+    border-top: $border;
 
-
-
-
-
-
-
+    span {
+      color: $green;
+    }
+  }
+}
 
 //Media Queries
 @media (max-width: 1200px) {
   .header {
     padding: 2rem 5%;
+  }
+
+  section {
+    padding: 3rem 5%;
   }
 }
 
@@ -269,6 +329,10 @@ html {
 
   .header {
     padding: 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
   }
 }
 
