@@ -25,6 +25,24 @@ html {
 section {
   padding: 5rem 10%; }
 
+.heading-link {
+  text-align: center;
+  background: url(../img/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .heading-link h3 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #444; }
+  .heading-link p {
+    font-size: 2rem;
+    line-height: 2;
+    color: #777; }
+    .heading-link p a {
+      color: #0eb582; }
+      .heading-link p a:hover {
+        text-decoration: underline; }
+
 .heading {
   text-align: center;
   margin-bottom: 3rem;
@@ -255,6 +273,50 @@ section {
     .home-courses .slide .content .btn:hover {
       background: #444; }
 
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem; }
+  .about .image {
+    flex: 1 1 40rem; }
+    .about .image img {
+      width: 100%; }
+  .about .content {
+    flex: 1 1 40rem; }
+    .about .content .about-title {
+      font-size: 3rem;
+      text-transform: capitalize;
+      color: #444; }
+    .about .content p {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: #777;
+      padding: 1rem 0; }
+    .about .content .icons-container {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 2rem; }
+      .about .content .icons-container .icons {
+        flex: 1 1 14rem;
+        text-align: center;
+        border: 0.1rem solid #0eb582;
+        background: #f0fdfa;
+        padding: 3rem 2rem; }
+        .about .content .icons-container .icons img {
+          height: 8rem;
+          margin-bottom: .5rem; }
+        .about .content .icons-container .icons h3 {
+          padding: .5rem 0;
+          font-size: 3rem;
+          text-transform: capitalize;
+          color: #444; }
+        .about .content .icons-container .icons span {
+          font-size: 1.5rem;
+          line-height: 2;
+          color: #777; }
+
 .footer {
   background: #f0fdfa; }
   .footer .box-container {
@@ -355,4 +417,6 @@ section {
   html {
     font-size: 50%; }
   .heading {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .about .content .about-title {
+    font-size: 4rem; } }
