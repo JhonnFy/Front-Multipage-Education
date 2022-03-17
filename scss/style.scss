@@ -453,7 +453,6 @@ section {
 .teachers{
   .slide{
     text-align: center;
-    width: 30rem;
 
     &:hover{
       .image{
@@ -510,6 +509,52 @@ section {
       }
 
     }
+  }
+}
+
+
+.reviews{
+  .slide{
+    text-align: center;
+    width: 30rem;
+
+    p{
+      @include graphText(1.5rem);
+      position: relative;
+      background: $light-green;
+      border: $border;
+      margin-bottom: 3rem;
+      padding: 2rem;
+
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: -1.2rem; left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background: $light-green;
+        border-bottom: $border;
+        border-right: $border;
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+
+    img{
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+    }
+
+    h3{
+      @include titleText(2.2rem);
+      padding: .5rem 0;
+    }
+
+    .stars{
+      font-size: 1.2rem;
+      color: $green;
+    }
+
   }
 }
 
