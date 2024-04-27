@@ -1,2 +1,2 @@
 # Multipage Education
-![image](https://github.com/JhonnFy/Travel-Website/assets/97255802/7a1a2983-25b5-42e3-8a18-8e427b5310be)
+![image](https://github.com/JhonnFy/Front-Multipage-Education/assets/97255802/b6df04ee-b29c-4d38-844a-75ad04edd133)
